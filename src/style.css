@@ -42,7 +42,7 @@ body.overflow {
     padding: 40px 24px 40px 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    background-color: white;
+    background-color: rgb(38, 38, 38);
 }
 
 
@@ -51,7 +51,7 @@ body.overflow {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    background-color: #F4F4F4;
+    background-color: #202020;
 }
 
 .container {
@@ -78,7 +78,7 @@ body.overflow {
 }
 
 .sidebar__user {
-    background-color: #F4F4F4;
+    background-color: #4a4949;
     padding: 20px 30px;
     margin-left: 60px;
     margin-bottom: 100px;
@@ -87,7 +87,7 @@ body.overflow {
 }
 
 .sidebar__name {
-    color:#161814;
+    color:#bebebe;
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 6px;
@@ -120,7 +120,8 @@ body.overflow {
     transition: all .5s;
     cursor: pointer;
     width: 90%;
-    color:#161814;
+    background: #8f8f8f;
+    color:#343434;
     font-size: 16px;
     font-weight: 500;
 }
@@ -132,10 +133,18 @@ body.overflow {
 
 
 .content__title {
-    color: #161814;
+    color: #b5b5b5;
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 40px;
+}
+
+.content__module {
+    color: #dfdfdf;
+    font-size: 35px;
+    font-weight: 250;
+    margin-bottom: 40px;
+
 }
 
 .content__list {
@@ -155,16 +164,17 @@ body.overflow {
 .content__list-item  {
     cursor: pointer;
     padding: 12px 18px;
-    background-color: #fff;
+    background-color: #8a8a8a;
+    color: #dfdfdf;
     border-radius: 10px;
-    border: 1px solid #DADEC9;
+    border: 1px solid #434443;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
 }
 
 .content__list-item:hover,.content__list-diplom:hover {
-    background-color: #AFB1A7;
+    background-color: #4a4a4a;
 }
 
 li a {
@@ -179,9 +189,10 @@ li a {
     transition: all .3s;
     display: inline-block;
     padding: 12px 18px;
-    background-color: #fff;
+    background-color: #898989;
+    color: #d8d8d8;
     border-radius: 10px;
-    border: 1px solid #DADEC9;
+    border: 1px solid #494949;
 }
 
 .content__decor {
