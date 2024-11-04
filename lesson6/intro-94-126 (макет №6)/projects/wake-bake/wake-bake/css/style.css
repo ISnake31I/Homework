@@ -41,7 +41,7 @@
 }
 
 .main__program {
-    padding: 145px;
+    padding: 140px 0;
 }
 
 .container {
@@ -541,12 +541,11 @@
 
 .program__top {
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: space-between;
     margin-bottom: 60px;
+    gap: 30px 15px;
 }
-
-.program__heading {}
 
 .program__title {
     margin-bottom: 20px;
@@ -565,10 +564,12 @@
     gap: 15px;
 }
 .program__action {
-    gap: 40px;
     display: grid;
     grid-template: repeat(3, auto) / 1.65fr 1fr;
+    gap: 40px;
     max-width: 501px;
+    width: 100%;
+    flex-shrink: 0;
 }
 .program__discount {
     font-size: 20px;
@@ -643,6 +644,7 @@
     border-radius: 100px;
     box-shadow: 0px 4px 20px 0px hsla(29, 18%, 77%, 0.302);
     padding: 14px 30px;
+    white-space: nowrap;
 
     transition: var(--transition);
 }
@@ -686,10 +688,16 @@
     padding: 41px 30px;
     width: 100%;
     background: transparent;
+    text-align: left;
 
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    gap: 15px;
+    transition: var(--transition);
+}
+
+.accordion__list-item--open .accordion-list__control {
+    padding-bottom: 20px;
 }
 
 .accordion-list__control-title {
@@ -697,10 +705,12 @@
 }
 
 .accordion-list__control-icon {
+    padding: 10px;
     width: 36px;
     height: 36px;
     border: 1.5px solid var(--accent-color);
     border-radius: 50%;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -935,6 +945,16 @@
         grid-column: 1/-1;
     }
 
+    /* ================================================================= */
+
+    .program__top {
+    flex-direction: column;
+    align-items: stretch;
+    }
+
+    .tab-controls {
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 900px) {
@@ -967,6 +987,36 @@
     .burger-icon {
         display: flex;
     }
+
+    /* ======================================================= */
+
+    .accordion-list__control-title {
+        font-size: 32px;
+    }
+
+    .accordion-list__control {
+        padding: 20px 30px;
+    }
+
+    .accordion-list__control-icon {
+        padding: 6px;
+        width: 26px;
+        height: 26px;
+    }
+
+    .accordion-content {
+        gap: 20px;
+    }
+
+    .program__img {
+        display: none;
+    }
+    .program__action{
+        grid-template: repeat(3, auto) / minmax(280px, 1fr) 1fr;
+        max-width: none;
+    }
+
+    /* ======================================================= */
 
     .footer__inner {
         grid-template-columns: repeat(2, 1fr);
@@ -1017,6 +1067,19 @@
         grid-template: none;
     }
 
+    /* ====================================== */
+
+    .accordion-content {
+        flex-direction: column;
+    }
+
+    .accordion-col:first-child {
+        max-width: none;
+    }
+
+    .accordion-content__text {
+        width: 100%;
+    }
 }
 
 
@@ -1063,13 +1126,62 @@
     }
 
     /* ================================================= */
+
+    .program__title {
+    text-align: center;
+    }
+    
+    .program__top {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .program__action{
+        grid-template: repeat(3, auto) / 1fr 1fr;
+        gap: 15px;
+    }
+    .program__discount {
+        justify-self: center;
+        grid-row: auto;
+        grid-column: 1 / -1;
+    }
+
+    .tab-controls {
+        justify-content: center;
+    }
+    .tab-controls__link {
+        padding: 10px 15px;
+    }
+
+    .accordion-list__control-title {
+        font-size: 28px;
+    }
+
+    .accordion-list__control {
+        padding: 15px 15px;
+    }
+
+    .accordion-content {
+        padding: 0 15px 40px;
+    }
+    /* ================================================= */
     .footer__inner {
         grid-template-columns: none;
     }
 
 }
 
-@media (max-width: 459px) {
+@media (max-width: 450px) {
+
+    .main__about {
+        padding: 60px 0 80px;
+    }
+
+    .main__program {
+        padding: 0 0 80px;
+    }
+
+    /* ===================================== */
+
     .modal__img {
         max-width: 50%;
         margin-top: -45px;
@@ -1082,5 +1194,31 @@
     .modal__window {
         padding: 0 15px 45px;
     }
+
+    /* ============================================= */
+
+    .program__action{
+        grid-template: none;
+    }
+    .program__price {
+        text-align: center;
+    }
+
+    .tab-controls {
+        gap: 15px;
+    }
+
+    .accordion-list__control {
+        padding: 17px 15px;
+    }
+
+    .accordion-content {
+        padding: 0 15px 30px;
+    }
+    
+    .accordion-content__item {
+        margin-bottom: 10px;
+    }
+
 
 }
