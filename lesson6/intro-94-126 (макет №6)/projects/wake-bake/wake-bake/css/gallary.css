@@ -1,0 +1,116 @@
+.gallary {}
+
+.gallary__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-bottom: 40px;
+}
+
+.gallary__img {
+    justify-self: center;
+    align-self: center;
+}
+
+.gallary__img img {
+    max-width: 100%;
+}
+
+.gallary__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 30px 15px;
+}
+
+.gallary__info {
+    max-width: 380px;
+}
+
+.gallary__title {
+    margin-bottom: 20px;
+}
+
+.gallary__text {}
+
+.gallary__nav {
+    display: flex;
+    align-items: center;
+    gap: 98px;
+
+    font-family: 'Gabriola';
+    font-size: 42px;
+    line-height: 0.9;
+    position: relative;
+}
+
+.gallary__prev,
+.gallary__next {
+    background: transparent;
+    cursor: pointer;
+    border: 1.5px solid var(--accent-color);
+    border-radius: 50%;
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: var(--transition);
+}
+
+.swiper-button-disabled.gallary__prev,
+.swiper-button-disabled.gallary__next {
+    border: 1.5px solid #e1d9e1;
+    cursor: auto;
+}
+.swiper-button-disabled.gallary__prev path,
+.swiper-button-disabled.gallary__next path {
+    fill:  #e1d9e1;;
+}
+.swiper-button-disabled.gallary__prev:hover,
+.swiper-button-disabled.gallary__next:hover {
+    background: transparent;
+}
+.swiper-button-disabled.gallary__prev:hover path,
+.swiper-button-disabled.gallary__next:hover path {
+    fill:  #e1d9e1;;
+}
+
+.gallary__prev path,
+.gallary__next path {
+    transition: var(--transition);
+}
+
+.gallary__prev:hover,
+.gallary__next:hover {
+    background: var(--accent-color);
+}
+.gallary__prev:hover path,
+.gallary__next:hover path {
+    fill: var(--general-bg);
+}
+
+
+.gallary__pagination {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: auto;
+    width: auto;
+    transform: translate(-50%, -50%);
+}
+
+.gallary__slider {}
+
+.gallary__wrapper {}
+
+.gallary__slide {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+.gallary__slide img {
+    width: 100%;
+}
