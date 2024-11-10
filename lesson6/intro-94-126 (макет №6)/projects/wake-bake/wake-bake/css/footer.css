@@ -40,8 +40,6 @@
     margin-bottom: 0px;
 }
 
-.footer-contact-list {}
-
 .footer__contact-item {
     margin-bottom: 10px;
 }
@@ -49,8 +47,6 @@
 .footer__contact-item:last-child {
     margin-bottom: 0px;
 }
-
-.footer__contact-link {}
 
 .footer__col-tel {
     margin-bottom: 47px;
@@ -80,8 +76,6 @@
     display: flex;
     gap: 15px;
 }
-
-.socials__item {}
 
 .socials__link path {
     transition: var(--transition);

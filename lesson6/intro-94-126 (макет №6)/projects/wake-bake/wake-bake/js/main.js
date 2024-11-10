@@ -83,21 +83,22 @@
 
     document.addEventListener('DOMContentLoaded', function () {
         const controls = document.querySelectorAll('.accordion-list__control');
-
+    
         controls.forEach(control => {
-            control.addEventListener('click', () => {
+            control.addEventListener('click', (event) => {
+                event.preventDefault();
+    
                 const parentItem = control.closest('.accordion__list-item');
                 const content = parentItem.querySelector('.accordion-list__content');
-
+    
                 document.querySelectorAll('.accordion__list-item').forEach(item => {
                     if (item !== parentItem) {
                         item.classList.remove('accordion__list-item--open');
-
                         const itemContent = item.querySelector('.accordion-list__content');
                         itemContent.style.maxHeight = null;
                     }
                 });
-
+    
                 const isOpen = parentItem.classList.toggle('accordion__list-item--open');
                 content.style.maxHeight = isOpen ? content.scrollHeight + 'px' : null;
             });
@@ -146,7 +147,7 @@
 
     const swiperTestimonials = new Swiper('.testimonials__slider', {
         spaceBetween: 0,
-        slidesPerView: 2,
+        slidesPerView: 1,
         centeredSlides: true,
 
         navigation: {
@@ -159,7 +160,27 @@
             draggable: true,
         },
 
+        breakpoints: {
+
+            901: {
+                slidesPerView: 1.5,
+            },
+
+            1201: {
+                slidesPerView: 2,
+            }
+
+        }
+
     });
+
+// phone-mask
+
+    const telInputs = document.querySelectorAll('input[type="tel"]')
+    const im = new Inputmask('+7 (999) 999-99-99')
+    im.mask(telInputs)
+
+
 
 
 })()

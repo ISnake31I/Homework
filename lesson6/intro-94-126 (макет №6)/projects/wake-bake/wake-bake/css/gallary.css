@@ -1,4 +1,3 @@
-.gallary {}
 
 .gallary__inner {
     display: grid;
@@ -30,8 +29,6 @@
 .gallary__title {
     margin-bottom: 20px;
 }
-
-.gallary__text {}
 
 .gallary__nav {
     display: flex;
@@ -102,10 +99,6 @@
     width: auto;
     transform: translate(-50%, -50%);
 }
-
-.gallary__slider {}
-
-.gallary__wrapper {}
 
 .gallary__slide {
     border-radius: var(--border-radius);

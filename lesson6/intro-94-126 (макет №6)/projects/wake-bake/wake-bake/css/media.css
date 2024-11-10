@@ -13,7 +13,9 @@
 
     /* ============================================ */
 
-
+    .contact__inner::after {
+        top: -16%;
+    }
 
     /* ============================================ */
 
@@ -54,6 +56,13 @@
 
     .tab-controls {
         flex-wrap: wrap;
+    }
+
+    /* =================================================================== */
+
+    .contact__inner {
+        gap: 30px;
+        align-items: center;
     }
 }
 
@@ -132,6 +141,43 @@
 
     /* ======================================================= */
 
+    .testimonials__inner {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .testimonials__nav {
+        align-self: end;
+    }
+
+    .testimonials__scrollbar {
+        max-width: 75%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    /* ======================================================= */
+
+    .contact__inner::before {
+        content: url("../img/decor/barries.png");
+        position: absolute;
+        top: -16%;
+        left: -2%;
+    }
+
+    .contact__inner {
+        justify-content: center;
+    }
+
+    .contact__img {
+        display: none;
+    }
+
+    
+
+    /* ======================================================= */
+
     .footer__inner {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -196,7 +242,6 @@
     }
 
     /* ====================================== */
-
 
 
 }
@@ -302,6 +347,33 @@
 
     /* ================================================= */
 
+    .testimonials__inner {
+        margin-bottom: 20px;
+    }
+
+    .testimonials__slide {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* ================================================= */
+
+    .contact__inner::before {
+        display: none;
+    }
+
+    .contact {
+        padding-bottom: 80px;
+    }
+
+    .contact__title, 
+    .contact__text {
+        text-align: center;
+    }
+
+    /* ================================================= */
+
     .footer__inner {
         grid-template-columns: none;
     }
@@ -358,5 +430,16 @@
         margin-bottom: 10px;
     }
 
+    /* =============================================== */
+
+    .testimonials__slide {
+        padding: 20px 10px 30px;
+    }
+
+    /* ================================================ */
+
+    .contact__title {
+        font-size: 51px;
+    }
 
 }

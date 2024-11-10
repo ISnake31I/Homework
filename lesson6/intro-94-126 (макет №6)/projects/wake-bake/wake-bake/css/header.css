@@ -21,15 +21,10 @@
     width: 100%;
 }
 
-.nav {}
-
 .nav__list {
     display: flex;
     gap: 4vh 40px;
-
 }
-
-.nav__item {}
 
 .nav__link {
     display: block;
