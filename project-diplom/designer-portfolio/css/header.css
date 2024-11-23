@@ -1,0 +1,185 @@
+.header__top {
+    border-bottom: 1px solid #e1dbd1;
+}
+
+.header__top-inner {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    font-family: 'Manrope';
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--accent-bg-2);
+    text-align: center;
+}
+
+.header__nav-container {
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    margin-right: 50px;
+}
+
+.nav__list {
+    display: flex;
+    gap: 4vh 25px;
+    align-items: center;
+}
+
+.nav__item--active {
+    padding: 14px 24px;
+    border-radius: 8px;
+    background: rgb(245, 243, 240);
+}
+
+
+.header__control {}
+
+.heder__button img {
+    margin-right: 9px;
+}
+
+.call__text {
+    color: var(--accent-text-white);
+    font-family: 'Manrope';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/* ============================================================= */
+
+.hero__inner {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.hero__container {
+    max-width: 943px;
+    width: 100%;
+    max-height: 692px;
+    margin-top: 142px;
+}
+
+.hero__content-container {
+    max-height: 433px;
+    height: 100%;
+}
+
+.hero__content {
+    max-width: 943px;
+    margin-bottom: 60px;
+}
+
+.hero__greetings {
+    max-width: 220px;
+    background: #f5f3f0;
+    border-radius: 13px;
+    padding: 10px 0;
+
+    margin-bottom: 30px;
+}
+
+.hero__greetings-text {
+    text-align: center;
+
+    color: var(--general-text-2);
+    font-family: 'Manrope';
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.hero__title {
+    color: #1a1a1a;
+    font-family: 'Manrope';
+    font-size: 58px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.hero__text {
+    color: #4d4d4d;
+    font-family: 'Manrope';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    margin-bottom: 50px;
+}
+
+.hero__control {
+    display: flex;
+}
+
+.hero__control span {
+    margin-left: 4vw;
+    display: flex;
+    align-items: center;
+}
+
+.hero__button img {
+    margin-right: 9px;
+}
+
+.button {}
+
+.call__text {}
+
+.hero__info {
+    max-width: 943px;
+    width: 100%;
+    max-height: 179px;
+    background: #F7F6F3;
+    border-radius: 12px 0px 0px 12px;
+    position: absolute;
+}
+
+.hero__info-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px 50px;
+    gap: 30px;
+}
+
+.hero__info-item {}
+
+.hero__info-title {
+    font-family: 'Manrope';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.hero__info-title span {
+    color: #5700FF;
+    margin-left: -6px;
+}
+
+.hero__info-text {
+    color: rgb(77, 77, 77);
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.hero__img {
+    position: relative;
+    max-width: 815px;
+    max-height: 977px;
+    width: 100%;
+    left: 156px;
+}
+
+.hero__img img {
+    position: absolute;
+    border-radius: 0 0 0 30px;
+}
