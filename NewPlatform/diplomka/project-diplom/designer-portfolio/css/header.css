@@ -31,6 +31,14 @@
     align-items: center;
 }
 
+.nav__item {
+    color: #333333;
+    font-family: 'Manrope';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
 .header__control {
     margin-left: 50px;
 }
@@ -67,6 +75,7 @@
     background: var(--accent-text-1);
     transition: var(--transition);
 }
+
 .burger-icon span::after {
     width: 25px;
     height: 3px;
@@ -200,8 +209,7 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
-.hero__info-item {
-}
+.hero__info-item {}
 
 .hero__info-title {
     font-family: 'Manrope';

@@ -56,9 +56,23 @@
         font-size: 14px;
     }
 
+    /* ======================================================== */
+
+
+
+    /* ======================================================== */
+
+    .footer__item {
+        padding: 0 30px;
+    }
+
 }
 
 @media (max-width: 1400px) {
+
+    .header__control {
+        margin-left: 30px;
+    }
 
     .hero__info-list {
         display: grid;
@@ -68,6 +82,21 @@
 
     .hero__img img {
         min-width: 602px;
+    }
+
+    /* ========================================================= */
+
+
+
+    /* ========================================================= */
+
+    .footer__item {
+        padding: 0 15px;
+    }
+
+    .footer__contact {
+        padding: 12px 16px;
+        margin: 15px 0;
     }
 
 }
@@ -130,6 +159,16 @@
         min-width: 500px;
     }
 
+    /* ================================================== */
+
+
+
+    /* ================================================== */
+
+    .footer__copy {
+        margin-top: 25px;
+    }
+
 }
 
 @media (max-width: 1000px) {
@@ -139,12 +178,13 @@
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
-        
+
     }
 
     .hero__content {
         flex: none;
     }
+
     .hero__body {
         display: flex;
         flex-direction: column;
@@ -171,14 +211,14 @@
     }
 
     .hero__info-item {
-        background-color: #f7f7f7; /* Цвет фона для блока */
+        background-color: #f7f7f7;
         padding: 20px;
         border-radius: 8px;
-        text-align: center; /* Выравнивание текста по центру */
+        text-align: center;
     }
 
     .hero__info-item:first-child {
-        grid-column: 1 / -1; /* Разворачивает элемент на всю ширину */
+        grid-column: 1 / -1;
     }
 
     .hero__img img {
@@ -188,6 +228,34 @@
         padding: 0 10px;
     }
 
+    /* =============================================== */
+
+
+
+    /* =============================================== */
+
+    .footer {
+        padding: 30px 0 10px;
+    }
+
+    .footer__contact {
+        display: none;
+    }
+
+    .footer__top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 150px;
+    }
+
+    .footer__nav-container {
+        order: 2;
+    }
+
+    .footer__socials {
+        order: 1;
+    }
 
 }
 
@@ -201,6 +269,26 @@
 
     .hero__title {
         font-size: 40px;
+    }
+
+    /* ============================================= */
+
+
+
+    /* ============================================= */
+
+    .footer__nav-item {
+        margin-right: 20px;
+
+        color: rgb(51, 51, 51);
+        font-family: 'Manrope';
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+
+    .footer__copy {
+        font-size: 12px;
     }
 
 }
