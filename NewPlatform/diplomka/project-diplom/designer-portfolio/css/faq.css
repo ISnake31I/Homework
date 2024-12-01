@@ -78,6 +78,10 @@
     width: 100%;
     border: 1px solid #e1dbd1;
     border-radius: 8px;
+    transition: var(--transition);
+}
+.accordion__list-control:hover .accordion__list-control-icon {
+    background-color: #e1dbd155;
 }
 
 .accordion__list-content {

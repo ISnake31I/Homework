@@ -79,6 +79,9 @@
 .thumbnails:hover {
     opacity: 1;
 }
+.thumbnails--active {
+    opacity: 1;
+}
 
 
 .works__control {
@@ -130,6 +133,11 @@
 
     border: 1px solid #e1dbd1;
     border-radius: 6px;
+    transition: var(--transition);
+}
+.works__prev:hover,
+.works__next:hover {
+    background: #e1dbd155;
 }
 
 .works__pagination {

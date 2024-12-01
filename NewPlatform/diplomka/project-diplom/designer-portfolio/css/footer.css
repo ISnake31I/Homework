@@ -71,6 +71,7 @@
     border-radius: 8px;
     box-shadow: inset 0px 0px 14px 4px #ffffff80;
     background: var(--accent-bg-2);
+    cursor: pointer;
 }
 
 .footer__socials-link img {

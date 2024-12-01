@@ -1,5 +1,15 @@
 (function () {
 
+    const links = document.querySelectorAll('a');
+
+    links.forEach(link => {
+        link.addEventListener('click', (event) => {
+            if (link.getAttribute('href') === '#') {
+                event.preventDefault(); // Предотвращает прокрутку вверх
+            }
+        });
+    });
+
     // BURGER
 
     document.addEventListener('click', burgerInit)
@@ -31,6 +41,12 @@
         thumbnails.forEach(thumb => {
             thumb.addEventListener('click', () => {
                 mainPhoto.src = thumb.src;
+
+                thumbnails.forEach(t => {
+                    t.classList.remove('thumbnails--active');
+                });
+
+                thumb.classList.add('thumbnails--active');
             });
         });
     });
@@ -86,7 +102,7 @@
 
         pagination: {
             el: '.works__pagination',
-            
+
         },
 
         navigation: {
@@ -127,14 +143,14 @@
 
     document.addEventListener('DOMContentLoaded', function () {
         const controls = document.querySelectorAll('.accordion__list-control');
-    
+
         controls.forEach(control => {
             control.addEventListener('click', (event) => {
                 event.preventDefault();
-    
+
                 const parentItem = control.closest('.accordion__list-item');
                 const content = parentItem.querySelector('.accordion__list-content');
-    
+
                 document.querySelectorAll('.accordion__list-item').forEach(item => {
                     if (item !== parentItem) {
                         item.classList.remove('accordion__list-item--open');
@@ -142,20 +158,20 @@
                         itemContent.style.maxHeight = null;
                     }
                 });
-    
+
                 const isOpen = parentItem.classList.toggle('accordion__list-item--open');
                 content.style.maxHeight = isOpen ? content.scrollHeight + 'px' : null;
             });
         });
         // Инициализация: открываем элемент, если у него есть класс 'accordion__list-item--open'
-    document.querySelectorAll('.accordion__list-item').forEach(item => {
-        const content = item.querySelector('.accordion__list-content');
-        if (item.classList.contains('accordion__list-item--open')) {
-            content.style.maxHeight = content.scrollHeight + 'px';
-        } else {
-            content.style.maxHeight = null;
-        }
-    });
+        document.querySelectorAll('.accordion__list-item').forEach(item => {
+            const content = item.querySelector('.accordion__list-content');
+            if (item.classList.contains('accordion__list-item--open')) {
+                content.style.maxHeight = content.scrollHeight + 'px';
+            } else {
+                content.style.maxHeight = null;
+            }
+        });
     });
 
 

@@ -52,6 +52,11 @@
 
     border: 1px solid #e1dbd1;
     border-radius: 6px;
+    transition: var(--transition);
+}
+.testimonials__prev:hover,
+.testimonials__next:hover {
+    background: #e1dbd119;
 }
 
 
@@ -89,10 +94,13 @@
     font-weight: 400;
 }
 
-.testimonials__social-list {}
+.testimonials__social-list {
+    display: flex;
+}
 
 .testimonials__social-item {
-    display: flex;
+    cursor: pointer;
+    margin-left: 10px;
 }
 
 .testimonials__social-link {
@@ -101,7 +109,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 10px;
 
     border: 1px solid #ebe7e0;
     border-radius: 8px;
