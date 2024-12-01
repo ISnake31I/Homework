@@ -1,0 +1,153 @@
+.works__desktop {
+    display: block;
+}
+
+/* ===================================== */
+/* ===================================== */
+
+.works__title {
+    color: var(--accent-text-1);
+    font-family: 'Manrope';
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.works__text {
+    color: var(--general-text-2);
+    font-family: 'Manrope';
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.works__section {}
+
+.works__grid-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.works__grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    margin: 15px;
+
+    border-radius: 12px;
+    background: #f7f6f3;
+}
+
+.hiden {
+    display: none;
+}
+
+.works__grid-title {
+    color: var(--accent-text-1);
+    font-family: 'Manrope';
+    font-size: 20px;
+    font-weight: 600;
+
+    margin-bottom: 30px;
+}
+
+.works__img {
+    position: relative;
+}
+
+.main__img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.works__img-thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.thumbnails {
+    width: 20%;
+    margin: 0 20px;
+    opacity: 0.5;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: opacity 0.3s;
+}
+
+.thumbnails:hover {
+    opacity: 1;
+}
+
+
+.works__control {
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.works__button {
+    padding: 10px 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.works__button-text {
+    color: var(--accent-text-white);
+    font-family: 'Manrope';
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* ======================================= */
+/* ======================================= */
+.works__mobile {
+    display: none;
+}
+
+/* ======================================= */
+
+.works__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.works__prev,
+.works__next {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #fbfaf9;
+    width: 42px;
+    height: 42px;
+    margin: 0 20px;
+
+    border: 1px solid #e1dbd1;
+    border-radius: 6px;
+}
+
+.works__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 120px;
+}
+
+.swiper-pagination-bullet {
+    width: 30px;
+    height: 5px;
+    border-radius: 52px;
+    background: #e1dbd1;
+    margin: 0px 2px;
+}
+
+.swiper-pagination-bullet-active {
+    border-radius: 52px;
+    background: var(--accent-bg-2);
+}

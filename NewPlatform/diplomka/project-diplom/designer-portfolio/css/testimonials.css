@@ -1,0 +1,123 @@
+.testimonials__title {
+    color: var(--accent-text-1);
+    font-family: 'Manrope';
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.testimonials__text {
+    color: var(--general-text-2);
+    font-family: 'Manrope';
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.testimonials__section {}
+
+
+.testimonials__content-top {
+    display: flex;
+    justify-content: space-between;
+
+    height: 66px;
+
+    border-bottom: 1px solid #e1dbd1;
+    margin-bottom: 50px;
+}
+
+.testimonials__content-text {
+    color: var(--general-text-2);
+    font-family: 'Manrope';
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.testimonials__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials__prev,
+.testimonials__next {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #fbfaf9;
+    width: 42px;
+    height: 42px;
+    margin-left: 16px;
+
+    border: 1px solid #e1dbd1;
+    border-radius: 6px;
+}
+
+
+.testimonials__slider {}
+
+.testimonials__wrapper {}
+
+.testimonials__slide {
+    height: auto;
+    border-radius: 12px;
+    background: var(--accent-bg-1);
+    padding: 50px;
+}
+
+.testimonials__block-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials__client {
+    margin-bottom: 30px;
+}
+
+.testimonials__cliet-name {
+    color: var(--accent-text-1);
+    font-family: 'Manrope';
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.testimonials__client-link {
+    color: var(--accent-text-2);
+    font-family: 'Manrope';
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.testimonials__social-list {}
+
+.testimonials__social-item {
+    display: flex;
+}
+
+.testimonials__social-link {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+
+    border: 1px solid #ebe7e0;
+    border-radius: 8px;
+    transition: var(--transition);
+}
+.testimonials__social-link:hover {
+    background: #ebe7e061;
+}
+
+.testimonials__rate {
+    margin-bottom: 30px;
+}
+
+.testimonials__quote {
+    color: var(--general-text-2);
+    font-family: 'Manrope';
+    font-size: 18px;
+    font-weight: 400;
+}

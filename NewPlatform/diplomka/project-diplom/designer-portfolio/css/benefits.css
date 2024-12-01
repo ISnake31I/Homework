@@ -1,0 +1,58 @@
+
+.benefits__title {
+    color: var(--accent-text-1);
+    font-family: 'Manrope';
+    font-size: 48px;
+    font-weight: 600;
+}
+.benefits__text {
+    color: var(--general-text-2);
+    font-family: 'Manrope';
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.benefits__flex {
+}
+
+.benefits__flex-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.benefits__flex-item {
+    display: flex;
+    flex: 0 0 calc(33.3% - 30px); /* Элементы занимают 50% ширины, с учетом отступа */
+    padding: 50px;
+    
+
+    border-radius: 12px;
+    background: var(--accent-bg-1);
+}
+.benefits__flex-item:nth-child(1) {
+    flex: 0 0 calc(50% - 30px); /* Занимает 65% ширины */
+}
+.benefits__flex-item:nth-child(2) {
+    flex: 0 0 calc(50% - 30px); /* Занимает 65% ширины */
+}
+
+.benefits__flex-content {
+
+}
+.benefits__flex-title {
+    color: var(--accent-text-1);
+    font-family: 'Manrope';
+    font-size: 24px;
+    font-weight: 600;
+
+    margin-bottom: 30px;
+}
+.benefits__flex-text {
+    color: var(--general-text-2);
+    font-family: 'Manrope';
+    font-size: 18px;
+    font-weight: 400;
+}

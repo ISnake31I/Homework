@@ -11,6 +11,11 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5vw;
+}
+
 .body {
     font-family: 'Manrope', Arial, sans-serif;
     line-height: 1.5;
@@ -50,6 +55,32 @@
 
 /* ====================================================== */
 
-.hero {
+.hero,
+.main__skills,
+.main__benefits,
+.main__works,
+.main__testimonials,
+.main__faq {
     margin-bottom: 150px;
+}
+
+.skills__inner,
+.benefits__inner,
+.works__inner,
+.testimonials__inner,
+.faq__inner {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.skills__body,
+.benefits__body,
+.works__body,
+.testimonials__body,
+.faq__body {
+    text-align: center;
+    max-width: 996px;
+    width: 100%;
+    margin-bottom: 80px;
 }

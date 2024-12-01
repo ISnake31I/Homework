@@ -32,11 +32,10 @@
 }
 
 .nav__item {
-    color: #333333;
+    color: var(--accent-text-1);
     font-family: 'Manrope';
     font-size: 18px;
     font-weight: 500;
-    line-height: 1.5;
 }
 
 .header__control {
@@ -52,7 +51,6 @@
     font-family: 'Manrope';
     font-size: 18px;
     font-weight: 500;
-    line-height: 1.5;
 }
 
 /* ============================================================= */
@@ -151,23 +149,20 @@
     font-family: 'Manrope';
     font-size: 28px;
     font-weight: 500;
-    line-height: 1.5;
 }
 
 .hero__title {
-    color: #1a1a1a;
+    color: var(--general-text);
     font-family: 'Manrope';
     font-size: 58px;
     font-weight: 600;
-    line-height: 1.5;
 }
 
 .hero__text {
-    color: #4d4d4d;
+    color: var(--general-text-2);
     font-family: 'Manrope';
     font-size: 18px;
     font-weight: 400;
-    line-height: 1.5;
 
     margin-bottom: 30px;
 }
@@ -185,7 +180,6 @@
     font-family: 'Manrope';
     font-size: 14px;
     font-weight: 500;
-    line-height: 1.5;
 }
 
 .hero__button img {
@@ -199,7 +193,7 @@
 .hero__info {
     width: 59%;
     max-height: 179px;
-    background: #F7F6F3;
+    background: var(--accent-bg-1);
     border-radius: 12px 0px 0px 12px;
     padding: 40px 50px;
 }
@@ -215,20 +209,18 @@
     font-family: 'Manrope';
     font-size: 48px;
     font-weight: 700;
-    line-height: 1.5;
 }
 
 .hero__info-title span {
-    color: #5700FF;
+    color: var(--accent-bg-2);
     margin-left: -6px;
 }
 
 .hero__info-text {
-    color: rgb(77, 77, 77);
-    font-family: Manrope;
+    color: var(--general-text-2);
+    font-family: 'Manrope';
     font-size: 18px;
     font-weight: 500;
-    line-height: 1.5;
 }
 
 .hero__img {}

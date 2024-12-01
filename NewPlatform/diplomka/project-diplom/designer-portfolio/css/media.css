@@ -17,8 +17,6 @@
 
 @media (max-width: 1600px) {
 
-
-
     .hero__content {
         margin-top: 127px;
     }
@@ -57,9 +55,68 @@
     }
 
     /* ======================================================== */
+    /* ======================================================== */
+
+    .skills__grid-item {
+        padding: 40px;
+        margin: 10px;
+    }
+
+    /* ======================================================== */
+
+    .benefits__flex-item {
+        padding: 40px;
+    }
+
+    /* ======================================================== */
+
+    .works__grid-title {
+        font-size: 16px;
+    }
+
+    /* ======================================================== */
+
+    .testimonials__cliet-name {
+        font-size: 16px;
+    }
+
+    .testimonials__client-link {
+        font-size: 14px;
+    }
+
+    .testimonials__quote {
+        font-size: 16px;
+    }
+
+    /* ======================================================== */
+
+    .accordion__list-control-title {
+        font-size: 18px;
+    }
+
+    .accordion__list-content-text {
+        font-size: 16px;
+    }
 
 
+    .faq__content {
+        max-width: 413px;
+    }
 
+    .faq__content-title {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
+    .faq__content-text {
+        font-size: 16px;
+    }
+
+    .faq__contact-text {
+        font-size: 14px;
+    }
+
+    /* ======================================================== */
     /* ======================================================== */
 
     .footer__item {
@@ -69,6 +126,19 @@
 }
 
 @media (max-width: 1400px) {
+
+    .hero,
+    .main__skills,
+    .main__benefits,
+    .main__works,
+    .main__testimonials,
+    .main__faq {
+        margin-bottom: 100px;
+    }
+
+    /* ======================================================= */
+    /* ======================================================= */
+    /* ======================================================= */
 
     .header__control {
         margin-left: 30px;
@@ -85,9 +155,124 @@
     }
 
     /* ========================================================= */
+    /* ========================================================= */
+
+    .skills__title {
+        font-size: 38px;
+    }
+
+    .skills__text {
+        font-size: 16px;
+    }
 
 
+    .skills__grid-item {
+        padding: 30px;
+    }
 
+    .skills__grid-img {
+        width: 54px;
+        height: 54px;
+    }
+
+    .skills__grid-img img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .skills__grid-content {
+        margin-top: 24px;
+    }
+
+    .skills__grid-title {
+        font-size: 20px;
+    }
+
+    .skills__grid-text {
+        font-size: 16px;
+    }
+
+    /* ========================================================= */
+
+    .benefits__title {
+        font-size: 38px;
+    }
+
+    .benefits__text {
+        font-size: 16px;
+    }
+
+
+    .benefits__flex-list {
+        gap: 20px;
+    }
+
+    .benefits__flex-title {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+
+    .benefits__flex-text {
+        font-size: 16px;
+    }
+
+    /* ========================================================= */
+
+    .works__title {
+        font-size: 38px;
+    }
+
+    .works__text {
+        font-size: 16px;
+    }
+
+    .works__grid-item {
+        padding: 40px;
+    }
+
+    .works__img-thumbnails {
+        margin-top: 20px;
+    }
+
+    .thumbnails {
+        margin: 0 14px;
+    }
+
+    /* ========================================================= */
+
+    .testimonials__title {
+        font-size: 38px;
+    }
+
+    .testimonials__text {
+        font-size: 16px;
+    }
+
+    .testimonials__slide {
+        padding: 35px;
+    }
+
+    .testimonials__social-link {
+        width: 44px;
+        height: 44px;
+        margin-left: 8px;
+    }
+
+    /* ========================================================= */
+
+    .faq__title {
+        font-size: 38px;
+    }
+
+    .faq__text {
+        font-size: 18px;
+    }
+
+    .accordion__list-content {
+        margin-right: 70px;
+    }
+
+    /* ========================================================= */
     /* ========================================================= */
 
     .footer__item {
@@ -160,9 +345,41 @@
     }
 
     /* ================================================== */
+    /* ================================================== */
 
+    .skills__grid-item {
+        padding: 15px;
+    }
 
+    /* ================================================== */
 
+    .benefits__flex-item {
+        flex: 0 0 calc(50% - 20px);
+    }
+
+    /* ================================================== */
+
+    .works__grid-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ================================================== */
+
+    .faq__accordion-content {
+        padding: 30px;
+        margin-right: 25px;
+    }
+
+    .accordion__list-content {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .faq__content {
+        padding: 30px;
+    }
+
+    /* ================================================== */
     /* ================================================== */
 
     .footer__copy {
@@ -172,6 +389,27 @@
 }
 
 @media (max-width: 1000px) {
+
+    .hero,
+    .main__skills,
+    .main__benefits,
+    .main__works,
+    .main__testimonials,
+    .main__faq {
+        margin-bottom: 80px;
+    }
+
+    .skills__body,
+    .benefits__body,
+    .works__body,
+    .testimonials__body,
+    .faq__body {
+        margin-bottom: 60px;
+    }
+
+    /* =================================================== */
+    /* =================================================== */
+    /* =================================================== */
 
     .header-hero {
         display: flex;
@@ -229,9 +467,48 @@
     }
 
     /* =============================================== */
+    /* =============================================== */
+
+    .skills__grid-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* =============================================== */
+
+    .accordion__list-control-icon {
+        max-width: 36px;
+        height: 36px;
+        width: 100%;
+    }
+
+    .accordion__list-control-title {
+        font-size: 16px;
+    }
+
+    .accordion__list-content-text {
+        font-size: 14px;
+    }
 
 
+    .faq__content {
+        max-width: 358px;
+        max-height: 380px;
+    }
 
+    .faq__content-title {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
+    .faq__content-text {
+        font-size: 14px;
+    }
+
+    .faq__contact-text {
+        font-size: 14px;
+    }
+
+    /* =============================================== */
     /* =============================================== */
 
     .footer {
@@ -259,22 +536,213 @@
 
 }
 
+@media (max-width: 800px) {
+    .works__desktop {
+        display: none;
+    }
+
+    .works__mobile {
+        display: block;
+    }
+
+    /* ========================================== */
+    /* ========================================== */
+
+    .benefits__flex-item {
+        flex: 0 0 calc(100% - 20px);
+    }
+
+    .benefits__flex-item:nth-child(1) {
+        flex: 0 0 calc(100% - 20px);
+    }
+
+    .benefits__flex-item:nth-child(2) {
+        flex: 0 0 calc(100% - 20px);
+    }
+
+    /* ============================================ */
+
+    .faq__container {
+        display: block;
+    }
+
+    .faq__content {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .faq__content {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* ============================================ */
+
+    .works__grid-item {
+        text-align: center;
+    }
+
+}
+
 @media (max-width: 600px) {
+
+    .hero,
+    .main__skills,
+    .main__benefits,
+    .main__works,
+    .main__testimonials,
+    .main__faq {
+        margin-bottom: 60px;
+    }
+
+    /* ============================================ */
+    /* ============================================ */
+    /*=============================================*/
+
     .header-hero {
         text-align: center;
     }
-}
 
-@media (max-width: 450px) {
+    /* ============================================= */
+    /* ============================================= */
 
-    .hero__title {
-        font-size: 40px;
+    .skills__grid-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     /* ============================================= */
 
 
 
+}
+
+@media (max-width: 450px) {
+
+    .skills__body,
+    .benefits__body,
+    .works__body,
+    .testimonials__body,
+    .faq__body {
+        margin-bottom: 40px;
+    }
+
+    /* ============================================= */
+    /* ============================================= */
+    /* ============================================= */
+
+    .hero__title {
+        font-size: 40px;
+    }
+
+    /* ============================================= */
+    /* ============================================= */
+
+    .skills__title {
+        font-size: 28px;
+    }
+
+    .skills__text {
+        font-size: 14px;
+    }
+
+    .skills__grid-title {
+        font-size: 18px;
+    }
+
+    .skills__grid-text {
+        font-size: 14px;
+    }
+
+    /* ============================================= */
+
+    .benefits__title {
+        font-size: 28px;
+    }
+
+    .benefits__text {
+        font-size: 14px;
+    }
+
+    .benefits__flex-title {
+        font-size: 18px;
+    }
+
+    .benefits__flex-text {
+        font-size: 14px;
+    }
+
+    /* ============================================= */
+
+    .works__title {
+        font-size: 28px;
+    }
+
+    .works__text {
+        font-size: 14px;
+    }
+
+    /* ============================================= */
+
+    .testimonials__title {
+        font-size: 28px;
+    }
+
+    .testimonials__text {
+        font-size: 14px;
+    }
+
+
+    .testimonials__block-body {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .testimonials__client {
+        margin-bottom: 10px;
+    }
+
+    .testimonials__social-link {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+
+    .testimonials__content-text {
+        font-size: 14px;
+    }
+
+
+    .testimonials__cliet-name {
+        font-size: 14px;
+    }
+
+    .testimonials__client-link {
+        font-size: 12px;
+    }
+
+    .testimonials__quote {
+        color: rgb(77, 77, 77);
+        font-family: 'Manrope';
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    /* ============================================= */
+
+    .faq__title {
+        font-size: 28px;
+    }
+
+    .faq__text {
+        font-size: 14px;
+    }
+
+    /* ============================================= */
     /* ============================================= */
 
     .footer__nav-item {

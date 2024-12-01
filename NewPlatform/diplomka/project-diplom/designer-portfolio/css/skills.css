@@ -1,0 +1,63 @@
+.skills__title {
+    color: var(--accent-text-1);
+    font-family: 'Manrope';
+    font-size: 48px;
+    font-weight: 600;
+}
+.skills__text {
+    color: var(--general-text-2);
+    font-family: 'Manrope';
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.skills__grid {
+    
+}
+
+.skills__grid-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.skills__grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    margin: 15px;
+
+    border-radius: 12px;
+    background: rgb(247, 246, 243);
+}
+
+.skills__grid-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 77px;
+    height: 77px;
+    border-radius: 8px;
+    box-shadow: inset 0px 0px 14px 4px #ffffff80;
+    background: var(--accent-bg-2);
+}
+
+.skills__grid-content {
+    margin-top: 30px;
+}
+
+.skills__grid-title {
+    color: var(--accent-text-1);
+    font-family: 'Manrope';
+    font-size: 24px;
+    font-weight: 600;
+}
+.skills__grid-text {
+    color: var(--general-text-2);
+    font-family: 'Manrope';
+    font-size: 18px;
+    font-weight: 400;
+}
